@@ -1,0 +1,7 @@
+git-remote-hg (0.2+git20140603.185852e-1) UNRELEASED; urgency=low
+
+  * Initial release (Closes: #703864).
+    - A big thanks to Sven Joachim for most of the initial packaging;
+      thanks Sven!
+
+ -- Jonathan McCrohan <jmccrohan@gmail.com>  Wed, 02 Jul 2014 19:54:42 -0700
