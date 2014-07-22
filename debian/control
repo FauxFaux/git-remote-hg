@@ -10,7 +10,7 @@ Build-Depends-Indep: asciidoc, xmlto,
 Standards-Version: 3.9.5
 Homepage: https://github.com/felipec/git-remote-hg
 Vcs-Git: git://anonscm.debian.org/collab-maint/git-remote-hg.git
-Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/git-remote-hg.git;a=summary
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/git-remote-hg.git;a=summary
 
 Package: git-remote-hg
 Architecture: all
