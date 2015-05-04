@@ -1,5 +1,8 @@
 git-remote-hg (0.2+git20140603.185852e-2) UNRELEASED; urgency=medium
 
+  * Add patch from upstream pull request to resolve Mercurial 3.2+ breakage
+    (Closes: #784209)
+    - Thanks to Max Horn <max@quendi.de> for the patch
   * Update Standards Version to 3.9.6
     - No changes required
 
