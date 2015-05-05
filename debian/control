@@ -1,21 +1,27 @@
 Source: git-remote-hg
-Section: vcs
-Priority: extra
 Maintainer: Jonathan McCrohan <jmccrohan@gmail.com>
 Uploaders: Jonathan Nieder <jrnieder@gmail.com>
+Section: vcs
+Priority: extra
 Build-Depends: debhelper (>= 9)
-Build-Depends-Indep: asciidoc, xmlto,
+Build-Depends-Indep: asciidoc,
+                     xmlto,
+                     mercurial,
+                     git,
+                     python
 # Needed for the testsuite
- mercurial, git, python
 Standards-Version: 3.9.6
-Homepage: https://github.com/felipec/git-remote-hg
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/git-remote-hg.git
 Vcs-Git: git://anonscm.debian.org/collab-maint/git-remote-hg.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/git-remote-hg.git;a=summary
+Homepage: https://github.com/felipec/git-remote-hg
 
 Package: git-remote-hg
 Architecture: all
 Multi-Arch: foreign
-Depends: ${misc:Depends}, git, python, mercurial
+Depends: ${misc:Depends},
+         git,
+         python,
+         mercurial
 Suggests: git-doc
 Description: bidirectional bridge between Git and Mercurial
  This package provides the hg remote helper, which allows Git to

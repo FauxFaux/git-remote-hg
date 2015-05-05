@@ -1,6 +1,7 @@
 git-remote-hg (0.2+git20140603.185852e-3) UNRELEASED; urgency=medium
 
   * Add DEP-3 headers to mercurial_3.2_support.patch 
+  * d/control: various fixes found by libconfig-model-dpkg-perl
 
  -- Jonathan McCrohan <jmccrohan@gmail.com>  Tue, 05 May 2015 23:01:59 +0100
 
