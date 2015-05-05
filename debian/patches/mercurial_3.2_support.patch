@@ -1,8 +1,9 @@
-From e716a9e1a9e460a45663694ba4e9e8894a8452b2 Mon Sep 17 00:00:00 2001
-From: Max Horn <max@quendi.de>
-Date: Sun, 9 Nov 2014 16:18:24 +0100
+Description: Mercurial_3.2_support
 Subject: [PATCH] Fix compatibility with Mercurial 3.2
-
+From: Max Horn <max@quendi.de>
+Bug: https://github.com/felipec/git-remote-hg/issues/27
+Bug-Debian: #784209
+Origin: https://github.com/fingolfin/git-remote-hg/commit/e716a9e1a9e460a45663694ba4e9e8894a8452b2
 ---
  git-remote-hg | 17 ++++++++++++++---
  1 file changed, 14 insertions(+), 3 deletions(-)

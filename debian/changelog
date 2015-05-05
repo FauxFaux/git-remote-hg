@@ -1,3 +1,9 @@
+git-remote-hg (0.2+git20140603.185852e-3) UNRELEASED; urgency=medium
+
+  * Add DEP-3 headers to mercurial_3.2_support.patch 
+
+ -- Jonathan McCrohan <jmccrohan@gmail.com>  Tue, 05 May 2015 23:01:59 +0100
+
 git-remote-hg (0.2+git20140603.185852e-2) unstable; urgency=medium
 
   * Add patch from upstream pull request to resolve Mercurial 3.2+ breakage
