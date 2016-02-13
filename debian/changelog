@@ -1,6 +1,8 @@
-git-remote-hg (0.2+git20140603.185852e-3) UNRELEASED; urgency=medium
+git-remote-hg (0.3-1) UNRELEASED; urgency=medium
 
-  * Switch to upstream to Max Horn's fork (fingolfin/git-remote-hg) as
+  * New upstream commit
+    - Drop Mercurial 3.2 patch; applied upstream
+  * Switch upstream to Max Horn's fork (fingolfin/git-remote-hg) as
     original repo (felipec/git-remote-hg) appears unmaintained
   * Add DEP-3 headers to mercurial_3.2_support.patch 
   * d/control: various fixes found by libconfig-model-dpkg-perl
