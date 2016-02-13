@@ -1,4 +1,4 @@
-git-remote-hg (0.3-1) UNRELEASED; urgency=medium
+git-remote-hg (0.3-1) unstable; urgency=medium
 
   * New upstream commit
     - Drop Mercurial 3.2 patch; applied upstream
@@ -8,7 +8,7 @@ git-remote-hg (0.3-1) UNRELEASED; urgency=medium
   * d/control: various fixes found by libconfig-model-dpkg-perl
   * d/control: Update Homepage, Vcs-{Browser,Git} URLs
 
- -- Jonathan McCrohan <jmccrohan@gmail.com>  Tue, 05 May 2015 23:01:59 +0100
+ -- Jonathan McCrohan <jmccrohan@gmail.com>  Sat, 13 Feb 2016 19:21:21 +0000
 
 git-remote-hg (0.2+git20140603.185852e-2) unstable; urgency=medium
 
