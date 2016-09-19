@@ -1,1 +1,3 @@
 debian-shebang.diff
+improve-hg-git-compatibility.patch
+avoid-deprecated-bookmarks-write.patch

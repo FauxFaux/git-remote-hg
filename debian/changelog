@@ -1,5 +1,10 @@
 git-remote-hg (0.3-2) UNRELEASED; urgency=medium
 
+  * Backport two upstream patches from felipec's repo which add support for
+    Mercurial 3.6 and consequently fix the FTBFS;
+    improve-hg-git-compatibility.patch and
+    avoid-deprecated-bookmarks-write.patch
+    (Closes: #833907, #834908)
   * Update Standards Version to 3.9.8
     - No changes required
 

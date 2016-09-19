@@ -1,0 +1,38 @@
+Description: Avoid deprecated bookmarks.write()
+ Required for Mercurial 3.6 compability
+Author: Felipe Contreras <felipe.contreras@gmail.com>
+Last-Update: 2016-09-19
+Commit: 822c6e4b03d9e66df8261f323caded716e8d8b8d
+Date: Tue, 17 May 2016 21:26:18 -0500
+
+diff --git a/git-remote-hg b/git-remote-hg
+index 4ec9852..042bf81 100755
+--- a/git-remote-hg
++++ b/git-remote-hg
+@@ -425,10 +425,23 @@ def updatebookmarks(repo, peer):
+     for k, v in remotemarks.iteritems():
+         localmarks[k] = hgbin(v)
+ 
+-    if hasattr(localmarks, 'write'):
+-        localmarks.write()
++    if check_version(3, 6):
++        lock = tr = None
++        try:
++            lock = repo.lock()
++            tr = repo.transaction('bookmark')
++            localmarks.recordchange(tr)
++            tr.close()
++        finally:
++            if tr is not None:
++                tr.release()
++            if lock is not None:
++                lock.release()
+     else:
+-        bookmarks.write(repo)
++        if hasattr(localmarks, 'write'):
++            localmarks.write()
++        else:
++            bookmarks.write(repo)
+ 
+ # instantiate a Mercurial "repo" object so that
+ # we can interact with the hg repository.
