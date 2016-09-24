@@ -1,4 +1,4 @@
-git-remote-hg (0.3-2) UNRELEASED; urgency=medium
+git-remote-hg (0.3-2) unstable; urgency=medium
 
   * Backport two upstream patches from felipec's repo which add support for
     Mercurial 3.6 and consequently fix the FTBFS;
@@ -9,7 +9,7 @@ git-remote-hg (0.3-2) UNRELEASED; urgency=medium
     - No changes required
   * Add DEP-8 (autopkgtest) support for upstream test suite
 
- -- Jonathan McCrohan <jmccrohan@gmail.com>  Mon, 19 Sep 2016 22:53:28 +0100
+ -- Jonathan McCrohan <jmccrohan@gmail.com>  Sun, 25 Sep 2016 00:14:32 +0100
 
 git-remote-hg (0.3-1) unstable; urgency=medium
 
