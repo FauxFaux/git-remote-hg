@@ -1,16 +1,23 @@
-Description: Change shebang line to /usr/bin/python
- Using /usr/bin/env is unnecessary since we know where the python
- interpreter is, and older versions of the python package did not
- provide /usr/bin/python2.
-Author: Sven Joachim <svenjoac@gmx.de>
-Forwarded: not-needed
-Last-Update: 2014-05-23
+From: Sven Joachim <svenjoac@gmx.de>
+Date: Fri, 23 May 2014 00:36:52 +0100
+Subject: Change shebang line to /usr/bin/python
 
---- git-remote-hg-0.2.orig/git-remote-hg
-+++ git-remote-hg-0.2/git-remote-hg
+Forwarded: not-needed
+
+Using /usr/bin/env is unnecessary since we know where the python
+interpreter is, and older versions of the python package did not
+provide /usr/bin/python2.
+---
+ git-remote-hg | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/git-remote-hg b/git-remote-hg
+index 62ad308..b1bb730 100755
+--- a/git-remote-hg
++++ b/git-remote-hg
 @@ -1,4 +1,4 @@
 -#!/usr/bin/env python2
 +#!/usr/bin/python
  #
  # Copyright (c) 2012 Felipe Contreras
- #
+ # Copyright (c) 2016 Mark Nauwelaerts
