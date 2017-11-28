@@ -1,6 +1,6 @@
 RM ?= rm -f
 
-T = $(wildcard *.t)
+T = main.t main-push.t bidi.t helper.t
 TEST_DIRECTORY := $(CURDIR)
 
 export TEST_DIRECTORY
