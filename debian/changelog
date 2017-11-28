@@ -1,3 +1,10 @@
+git-remote-hg (0.3+git20171128.76be528-1) UNRELEASED; urgency=medium
+
+  * Switch to new upstream (Closes: #844939)
+  * Rebase patches
+
+ -- Chris West (Faux) <debian@fau.xxx>  Tue, 28 Nov 2017 11:22:29 +0000
+
 git-remote-hg (0.3-2) unstable; urgency=medium
 
   * Backport two upstream patches from felipec's repo which add support for
