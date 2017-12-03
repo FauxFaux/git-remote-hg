@@ -1,4 +1,4 @@
-git-remote-hg (0.3+git20171128.76be528-1) UNRELEASED; urgency=medium
+git-remote-hg (0.3+git20171203.9f6c541-1) UNRELEASED; urgency=medium
 
   * Switch to new upstream (Closes: #844939)
   * Rebase patches

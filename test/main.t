@@ -15,6 +15,7 @@ if test "$CAPABILITY_PUSH" = "t"
 then
 	git config --global remote-hg.capability-push true
 	git config --global remote-hg.push-updates-notes true
+	git config --global remote-hg.fast-export-options '-C -C -M'
 else
 	git config --global remote-hg.capability-push false
 fi
@@ -489,7 +490,12 @@ testcopyrename='
 	(
 	cd gitrepo &&
 	cp content content-copy &&
-	echo one > content &&
+	# recent git-fast-export is (too) picky in recognizing copies
+	# although git-log is not as picky;
+	# since https://github.com/git/git/commit/8096e1d385660c159d9d47e69b2be63cf22e4f31
+	# a copy is only marked if source filed not modified as well
+	# (though destination file can be modified)
+	echo one >> content-copy &&
 	git add content content-copy &&
 	git commit -m copy &&
 	git mv content-copy content-moved
