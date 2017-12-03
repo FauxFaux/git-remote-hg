@@ -2,6 +2,8 @@ git-remote-hg (0.3+git20171203.9f6c541-1) UNRELEASED; urgency=medium
 
   * Switch to new upstream (Closes: #844939)
   * Rebase patches
+  * Update standards version to 4.1.2
+    - Change Priority: extra to optional
 
  -- Chris West (Faux) <debian@fau.xxx>  Tue, 28 Nov 2017 11:22:29 +0000
 
